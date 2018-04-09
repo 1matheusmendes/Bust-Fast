@@ -7,6 +7,10 @@
 
 		<script language='Javascript'>
 			
+			function iniciarJogo() {
+				var nivel_jogo = document.getElementById('nivel_jogo').value;
+				window.location.href = 'jogo.html' + nivel_jogo; //forçando abrir a pagina jogo 
+			}
 		</script>
 	</head>
 
@@ -14,14 +18,14 @@
 		<div>
 			<p>
 				<b>Nível: </b>
-				<select>
-					<option value="">Fácil</option>
-					<option value="">Normal</option>
-					<option value="">Dificil</option>
+				<select id="nivel_jogo">
+					<option value="1">Fácil</option>
+					<option value="2">Normal</option>
+					<option value="3">Dificil</option>
 				</select>
 			</p>
 			<br />
-			<img src="imagens/iniciar.png">
+			<img src="imagens/iniciar.png" onclick="iniciarJogo()">
 		</div>
 
 	</body>

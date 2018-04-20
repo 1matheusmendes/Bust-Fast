@@ -9,7 +9,7 @@
 			
 			function iniciarJogo() {
 				var nivel_jogo = document.getElementById('nivel_jogo').value;
-				window.location.href = 'jogo.html' + nivel_jogo; //forçando abrir a pagina jogo 
+				window.location.href = 'jogo.html?' + nivel_jogo; //forçando abrir a pagina jogo 
 			}
 		</script>
 	</head>
@@ -25,7 +25,7 @@
 				</select>
 			</p>
 			<br />
-			<img src="imagens/iniciar.png" onclick="iniciarJogo()">
+			<img src="imagens/iniciar.png" onclick="iniciarJogo()" />
 		</div>
 
 	</body>
